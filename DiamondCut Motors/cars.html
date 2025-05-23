@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars Page</title>
+    <link rel="stylesheet" href="./cars.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../Assets/Logo.png" alt="">
+        </div>
+        <div class="navbar-container">
+            <div class="judul">
+                <h1>DiamondCut Motors</h1>
+                <h4>Experience Luxury Beyond Imaginarion</h4>
+            </div>
+            <ul class="navbar-menu" id="menu">
+                <li class="navbar-item">
+                    <a href="./home.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./cars.html" class="navbar-link">Cars</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./showroom.html" class="navbar-link">Showroom</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./aboutUs.html" class="navbar-link">About Us</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="./login.html" class="navbar-link">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Our Partnership</h1>
+                    <a href="#to-bmw">
+                        <img class="carousel-logo" src="../Assets/Cars/logo1.png" alt="">
+                    </a>
+
+                </div>
+                <img src="../Assets/Cars/carousel-bmw.jpeg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Our Partnership</h1>
+                    <a href="#to-ferrari">
+                        <img class="carousel-logo" src="../Assets/Cars/logo2.png" alt="">
+                    </a>
+                </div>
+                <img src="../Assets/Cars/carousel-ferrari.jpeg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Our Partnership</h1>
+                    <a href="#to-lamborghini">
+                        <img class="carousel-logo" src="../Assets/Cars/logo3.png" alt="">
+                    </a>
+                </div>
+                <img src="../Assets/Cars/carousel-lamborghini.jpeg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Our Partnership</h1>
+                    <a href="#to-mclaren">
+                        <img class="carousel-logo" src="../Assets/Cars/logo4.png" alt="">
+                    </a>
+                </div>
+                <img src="../Assets/Cars/carousel-McLaren.jpeg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Our Partnership</h1>
+                    <a href="#to-mersedes">
+                        <img class="carousel-logo" src="../Assets/Cars/logo5.png" alt="">
+                    </a>
+                </div>
+                <img src="../Assets/Cars/carousel-Mersedes.jpeg" alt="Image 1" />
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-content">
+                    <h1>Our Partnership</h1>
+                    <a href="#to-porsche">
+                        <img class="carousel-logo" src="../Assets/Cars/logo6.png" alt="">
+                    </a>
+                </div>
+                <img src="../Assets/Cars/carousel-porsche.jpeg" alt="Image 1" />
+            </div>
+        </div>
+    </div>
+
+    <div  class="card-container">
+        <div id="to-bmw" class="card">
+            <img src="../Assets/Cars/image1.jpeg" alt="">
+            <div class="card-content">
+                <h3>BMW M3</h3>
+                <div class="description">
+                    Price : $70,000
+                    <br>
+                    Year : 2021
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 3.0L inline-6 twin-turbo engine, 473 hp, 406 lb-ft torque, 6-speed manual or 8-speed
+                    automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="1">Read More</button>
+                    <div class ="read-more" id="read-more-1">
+                        Description : The BMW M3 is a high-performance sports sedan that offers a combination of sharp
+                        handling, quick acceleration, and advanced technology.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="1">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image2.jpeg" alt="">
+            <div class="card-content">
+                <h3>BMW M5</h3>
+                <div class="description">
+                    Price : $104,000
+                    <br>
+                    Year : 2021
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 4.4L V8 twin-turbo engine, 600 hp, 553 lb-ft torque, 8-speed automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="2">Read More</button>
+                    <div class ="read-more" id="read-more-2">
+                        Description : The BMW M5 is a high-performance luxury sedan that blends comfort and luxury with impressive
+                        performance.   
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="2">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image3.jpeg" alt="">
+            <div class="card-content">
+                <h3>BMW i8</h3>
+                <div class="description">
+                    Price : $147,500
+                    <br>
+                    Year : 2014
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 1.5L inline-3 turbocharged engine + electric motor, total 369 hp, 6-speed automatic
+                    transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="3">Read More</button>
+                    <div class ="read-more" id="read-more-3">
+                        Description : The BMW i8 is a plug-in hybrid sports car that stands out with its futuristic design
+                        and exceptional fuel efficiency.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="3">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div id="to-ferrari" class="card">
+            <img src="../Assets/Cars/image4.jpeg" alt="">
+            <div class="card-content">
+                <h3>Ferrari 488 GTB</h3>
+                <div class="description">
+                    Price : $250,000
+                    <br>
+                    Year : 2015
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 3.9L V8 twin-turbo engine, 661 hp, 561 lb-ft torque, 7-speed dual-clutch automatic
+                    transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="4">Read More</button>
+                    <div class ="read-more" id="read-more-4">
+                        Description : The Ferrari 488 GTB is a supercar that offers outstanding performance and aerodynamic
+                        design, backed by Ferrari's racing technology
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="4">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image5.jpeg" alt="">
+            <div class="card-content">
+                <h3>Ferrari SF90</h3>
+                <div class="description">
+                    Price : $625,000
+                    <br>
+                    Year : 2019
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 4.0L V8 twin-turbo engine + 3 electric motors, total 986 hp, 8-speed dual-clutch
+                    automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="5">Read More</button>
+                    <div class ="read-more" id="read-more-5">
+                        Description : The Ferrari SF90 is a plug-in hybrid supercar with exceptional performance and
+                        advanced technology, marking a significant step forward in Ferrari's innovation.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="5">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image6.jpeg" alt="">
+            <div class="card-content">
+                <h3>Ferarri 812 SuperFast</h3>
+                <div class="description">
+                    Price : $335,000
+                    <br>
+                    Year : 2017
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 6.5L V12 naturally aspirated engine, 789 hp, 530 lb-ft torque, 7-speed dual-clutch
+                    automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="6">Read More</button>
+                    <div class ="read-more" id="read-more-6">
+                        Description : The Ferrari 812 SuperFast is a supercar with a V12 engine that offers peak performance
+                        and an exhilarating driving experience
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="6">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div id="to-lamborghini" class="card">
+            <img src="../Assets/Cars/image7.jpeg" alt="">
+            <div class="card-content">
+                <h3>Lamborghini Aventador</h3>
+                <div class="description">
+                    Price : $417,000
+                    <br>
+                    Year : 2011
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 6.5L V12 naturally aspirated engine, 730 hp, 509 lb-ft torque, 7-speed ISR automatic
+                    transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="7">Read More</button>
+                    <div class ="read-more" id="read-more-7">
+                        Description : The Lamborghini Aventador is an iconic supercar with aggressive design and exceptional
+                        performance, powered by a mighty V12 engine.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="7">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image8.jpeg" alt="">
+            <div class="card-content">
+                <h3>Lamborghini Huracan</h3>
+                <div class="description">
+                    Price : $260,000
+                    <br>
+                    Year : 2014
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 5.2L V10 naturally aspirated engine, 631 hp, 443 lb-ft torque, 7-speed dual-clutch
+                    automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="8">Read More</button>
+                    <div class ="read-more" id="read-more-8">
+                        The Lamborghini Huracan is a supercar that offers a blend of high performance and ease of driving,
+                        with an impressive V10 engine.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="8">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image9.jpeg" alt="">
+            <div class="card-content">
+                <h3>Lamborghini Urus</h3>
+                <div class="description">
+                    Price : $218,000
+                    <br>
+                    Year : 2018
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 4.0L V8 twin-turbo engine, 641 hp, 627 lb-ft torque, 8-speed automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="9">Read More</button>
+                    <div class ="read-more" id="read-more-9">
+                        Description : The Lamborghini Urus is a high-performance luxury SUV that combines the power and
+                        speed of a supercar with the comfort and utility of an SUV.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="9">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div id="to-mclaren" class="card">
+            <img src="../Assets/Cars/image10.jpeg" alt="">
+            <div class="card-content">
+                <h3>McLaren 720S</h3>
+                <div class="description">
+                    Price : $300,000
+                    <br>
+                    Year : 2017
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 4.0L V8 twin-turbo engine, 710 hp, 568 lb-ft torque, 7-speed dual-clutch automatic
+                    transmission
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="10">Read More</button>
+                    <div class ="read-more" id="read-more-10">
+                        Description : The McLaren 720S is a supercar that offers extraordinary performance, aerodynamic
+                        design, and advanced technology for an unmatched driving experience.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="10">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image11.jpeg" alt="">
+            <div class="card-content">
+                <h3>McLaren P1</h3>
+                <div class="description">
+                    Price : $1,150,000
+                    <br>
+                    Year : 2013
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 3.8L V8 twin-turbo engine + electric motor, total 903 hp, 7-speed dual-clutch
+                    automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="11">Read More</button>
+                    <div class ="read-more" id="read-more-11">
+                        Description : The McLaren P1 is a hybrid hypercar that combines racing technology with energy
+                        efficiency, offering outstanding performance and futuristic design.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="11">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image12.jpeg" alt="">
+            <div class="card-content">
+                <h3>McLaren 570S</h3>
+                <div class="description">
+                    Price : $196,000
+                    <br>
+                    Year : 2015
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 3.8L V8 twin-turbo engine, 562 hp, 443 lb-ft torque, 7-speed dual-clutch automatic
+                    transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="12">Read More</button>
+                    <div class ="read-more" id="read-more-12">
+                        Description : The McLaren 570S is a sports car that offers high performance at a more accessible
+                        price within the McLaren lineup, maintaining an exhilarating driving experience.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="12">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div id="to-mersedes" class="card">
+            <img src="../Assets/Cars/image13.jpeg" alt="">
+            <div class="card-content">
+                <h3>Mercedes-AMG GT</h3>
+                <div class="description">
+                    Price : $115,000
+                    <br>
+                    Year : 2014
+                    <br>
+                    Condition : Used
+                    <br>
+                    Specification : 4.0L V8 twin-turbo engine, 523 hp, 494 lb-ft torque, 7-speed dual-clutch automatic
+                    transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="13">Read More</button>
+                    <div class ="read-more" id="read-more-13">
+                        Description : The Mercedes-AMG GT is a luxury sports car with high performance and elegant design,
+                        equipped with advanced technology and exceptional comfort.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="13">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image14.jpeg" alt="">
+            <div class="card-content">
+                <h3>Mercedes-Benz S-Class</h3>
+                <div class="description">
+                    Price : $94,250
+                    <br>
+                    Year : 2021
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 3.0L inline-6 turbo engine + EQ Boost, 429 hp, 384 lb-ft torque, 9-speed automatic
+                    transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="14">Read More</button>
+                    <div class ="read-more" id="read-more-14">
+                        Description : The Mercedes-Benz S-Class is a luxury sedan that offers comfort, luxury, and advanced
+                        technology, making it the top choice for a premium driving experience.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="14">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image15.jpeg" alt="">
+            <div class="card-content">
+                <h3>Mercedes-Benz G-Class</h3>
+                <div class="description">
+                    Price : $130,900
+                    <br>
+                    Year : 2018
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 4.0L V8 twin-turbo engine, 416 hp, 450 lb-ft torque, 9-speed automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="15">Read More</button>
+                    <div class ="read-more" id="read-more-15">
+                        Description : The Mercedes-Benz G-Class is an iconic SUV that combines luxury with outstanding
+                        off-road capabilities, known for its distinctive boxy design and robust performance.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="15">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div id="to-porsche" class="card">
+            <img src="../Assets/Cars/image16.jpeg" alt="">
+            <div class="card-content">
+                <h3>Porsche 911</h3>
+                <div class="description">
+                    Price : $99,200
+                    <br>
+                    Year : 2022
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 3.0L flat-6 twin-turbo engine, 379 hp, 331 lb-ft torque, 7-speed manual or 8-speed
+                    PDK automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="16">Read More</button>
+                    <div class ="read-more" id="read-more-16">
+                        The Porsche 911 is a legendary sports car that offers high performance, classic design, and an
+                        exceptional driving experience.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="16">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image17.jpeg" alt="">
+            <div class="card-content">
+                <h3>Porsche 718 Cayman</h3>
+                <div class="description">
+                    Price : $59,900
+                    <br>
+                    Year : 2021
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : 2.0L flat-4 turbo engine, 300 hp, 280 lb-ft torque, 6-speed manual or 7-speed PDK
+                    automatic transmission.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="17">Read More</button>
+                    <div class ="read-more" id="read-more-17">
+                        Description : The Porsche 718 Cayman is a compact sports car that offers dynamic performance, sharp
+                        handling, and an attractive design.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="17">Read Less</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../Assets/Cars/image18.jpeg" alt="">
+            <div class="card-content">
+                <h3>Porsche Taycan</h3>
+                <div class="description">
+                    Price : $79,900
+                    <br>
+                    Year : 2020
+                    <br>
+                    Condition : New
+                    <br>
+                    Specification : Dual electric motors, total 402 hp (base model), 2-speed transmission on the rear
+                    axle.
+                    <br>
+                    <button  class ="read-more-btn" onclick="readMore(this)" data-target="18">Read More</button>
+                    <div class ="read-more" id="read-more-18">
+                        Description : The Porsche Taycan is an electric sports sedan that offers high performance,
+                        futuristic design, and advanced technology.
+                    </div>
+                    <br>
+                    <button class ="read-less-btn" onclick="readLess(this)" data-target="18">Read Less</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+    <footer>
+        <div class="footerContainer">
+            <div class="socialMedia">
+                <a href="" class="item" id="facebook"><img src="../Assets/Footer/sosmedFB.png" alt=""></a>
+                <a href="" class="item" id="twitter"><img src="../Assets/Footer/sosmedX.png" alt=""></a>
+                <a href="" class="item" id="instagram"><img src="../Assets/Footer/sosmedIG.png" alt=""></a>
+                <a href="" class="item" id="youtube"><img src="../Assets/Footer/sosmedYT.png" alt=""></a>
+                <a href="" class="item" id="tiktok"><img src="../Assets/Footer/sosmedTiktok.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="copyRight">
+            <p>Copyright &copy;2024; Designed by <span class="designer">Calvin Suharjono</span></p>
+        </div>
+    </footer>
+
+    <script src="./cars.js"></script>
+
+</body>
+
+</html>
